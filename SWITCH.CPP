@@ -1,0 +1,104 @@
+// Linear and Binary search
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+	clrscr();
+	int i,j,num[100],n,opt,num1;
+	cout<<"Which search you want to perform?"<<endl;
+	cout<<"1..Linear Search\n2..Binary Search\n";
+	cout<<"Enter your option"<<endl;
+	cin>>opt;
+	cout<<"How many numbers you want to enter?"<<endl;
+	cin>>n;
+	cout<<"Enter "<<n<<" numbers\n";
+	for(i=0;i<n;i++)
+	{
+		cin>>num[i];
+	}
+	cout<<"The numbers in ascending order are:"<<endl;
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<n;j++)
+		{
+			if(num[i]<num[j])
+			{
+				int temp;
+				temp=num[i];
+				num[i]=num[j];
+				num[j]=temp;
+			}
+		}
+	}
+	for(i=0;i<n;i++)
+	{
+		cout<<num[i]<<"\n";
+	}
+	cout<<"Which number you want to search?\n";
+	cin>>num1;
+	int beg=0,end=n,key,mid;
+	mid=(beg+end)/2;
+	switch(opt)
+	{
+		case 1:
+		for(i=0;i<n;i++)
+		{
+			if(num1==num[i])
+			{
+				cout<<"Number found"<<endl;
+				cout<<"The location is "<<i+1<<endl;
+				break;
+			}
+			else
+			{
+				cout<<"Number not found\n";
+				break;
+			}
+		}
+		break;
+		case 2:
+
+		for(i=0;i<n;i++)
+		{
+			if(num1<num[mid])
+			{
+				end=mid-1;
+			}
+			else
+			{
+				beg=mid+1;
+			}
+		}
+
+			if(num[mid]==num1)
+			{
+
+				cout<<"number found\n";
+				cout<<"The location is "<<mid+1<<endl;
+				break;
+			}
+
+			else if(num[mid]!=num1)
+			{
+				cout<<"Number not found\n";
+				break;
+			}
+		}
+			break;
+
+			default:
+			{
+			}
+	}
+	getch();
+}
+
+
+
+
+
+
+
+

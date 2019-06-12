@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int i,j,k,a=1;
+	cout<<"Pascals Triangle\n";
+	int rows;
+	cout<<"Enter number of rows\n";
+	cin>>rows;
+	for(i=1;i<=rows;i++)
+	{
+		for(k=1;k<rows-i-1;k++)
+		{
+			cout<<" ";
+		}
+		for(j=1;j<=i;j++)
+		{
+
+		       cout<<" "<<(i/j)*a;
+		}
+		a++;
+
+		cout<<endl;
+	}
+	getch();
+}

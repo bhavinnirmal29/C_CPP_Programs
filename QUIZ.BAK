@@ -1,0 +1,273 @@
+//MATHEMATICS QUIZ PROGRAM
+
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<math.h>
+char option;
+int points=0;
+int count=0;
+void rules()
+{
+	cout<<"There are some rules to play this game"<<endl<<endl;
+	cout<<"They are as follows:"<<endl<<endl;
+	cout<<"There will be 10 questions."<<endl<<endl;
+	cout<<"Each question will have 2 options"<<endl<<endl;
+	cout<<"You will earn 10 points for your every right answer."<<endl<<endl;
+	cout<<"If you give a wrong answer then  your game will end and the final result will be displayed."<<endl<<endl;
+	cout<<"Lets start the game"<<endl<<endl;
+	getch();
+}
+void main()
+{
+	clrscr();
+	char a[50];
+	cout<<"WELCOME TO MATHEMATICS QUIZ"<<endl<<endl;
+	rules();
+	cout<<d"Enter your name"<<endl<<endl;
+	gets(a);
+	cout<<"Lets Start..:)"<<endl<<endl;
+	clrscr();
+	int z;
+	cout<<"Press any Number to start"<<endl<<endl;
+	cin>>z;
+	clrscr();
+	switch(z>0)
+	{
+		case 1:
+		cout<<"1...Which is the correct distance formula from the below options"<<endl<<endl;
+		cout<<"A=sqrt(pow(x2-x1,2))+(pow(y2-y1,2))"<<endl<<endl;
+		cout<<"B=sqrt(pow(x2-x1))+(pow(y2+y1))"<<endl<<endl;
+		cout<<"Enter your option"<<endl<<endl;
+		cin>>option;
+		if(option=='a'||option=='A')
+		{
+			cout<<"Congrats..your answer is right"<<endl<<endl;
+			cout<<"You won 10 points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time....:("<<endl<<endl;
+			cout<<"Bye..."<<endl<<endl;
+			break;
+
+		}
+		clrscr();
+		case 2:
+
+		cout<<"2...How many sides of Scalene Triangle are Unequal?"<<endl<<endl;
+		cout<<"A..4 sides"<<endl<<endl;
+		cout<<"B..3 sides"<<endl<<endl;
+		cout<<"Enter your option"<<endl<<endl;
+		cin>>option;
+		if(option=='b'||option=='B')
+		{
+			cout<<"Congrats..your answer is Right..."<<endl<<endl;
+			cout<<"You won 10 more points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			cout<<endl<<endl;
+			break;
+
+		}
+		clrscr();
+		case 3:
+		cout<<endl;
+		cout<<"3...How many sides of EQUILATERAL traingle are Equal?"<<endl<<endl;
+		cout<<"A..4 sides"<<endl<<endl;
+		cout<<"B..3 Sides"<<endl<<endl;
+		cout<<"Enter your option"<<endl<<endl;
+		cin>>option;
+		if(option=='b'||option=='B')
+		{
+			cout<<"Congrats..your answer is right"<<endl<<endl;
+			cout<<"You won 10 more points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			cout<<endl;
+			break;
+
+		}
+		clrscr();
+		case 4:
+		cout<<endl;
+		cout<<"4..How many sides of ISOSCELES TRIANGLE are Equal?"<<endl<<endl;
+		cout<<"A..2 Sides"<<endl<<endl;
+		cout<<"B..3 Sides"<<endl<<endl;
+		cout<<"Enter your option"<<endl<<endl;
+		cin>>option;
+		if(option=='a'||option=='A')
+		{
+			cout<<"Congrats..your answer is Right"<<endl<<endl;
+			cout<<"You won 10 more points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			break;
+		}
+		clrscr();
+		case 5:
+		cout<<endl;
+		cout<<"5...Which is the correct formula for EQUILATERAL TRIANGLE?"<<endl<<endl;
+		cout<<"A...sqrt 3/4*side*side"<<endl<<endl;
+		cout<<"B...sqrt 3/2*side*side*side"<<endl<<endl;
+		cout<<"Enter Your Option"<<endl<<endl;
+		cin>>option;
+		if(option=='a'||option=='A')
+		{
+			cout<<"Congrats..your answer is Right"<<endl<<endl;
+			cout<<"You won 10 more points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			break;
+		}
+		clrscr();
+		case 6:
+		cout<<endl;
+		cout<<"6...Which are the correct properties of parallelogram?"<<endl<<endl;
+		cout<<"A...Opposites sides Equal and Diagonals Unequal"<<endl<<endl;
+		cout<<"B...Opposites sides Equal and Diagonals Equal"<<endl<<endl;
+		cout<<"Enter Your Option"<<endl<<endl;
+		cin>>option;
+		if(option=='A'||option=='a')
+		{
+			cout<<"Your Answer is Correct"<<endl<<endl;
+			cout<<"You won 10 more points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			break;
+		}
+		clrscr();
+		case 7:
+		cout<<endl<<endl;
+		cout<<"7...Which are the correct properties of a RECTANGLE?"<<endl<<endl;
+		cout<<"A...Opposite side Equal and Diagonals Equal"<<endl<<endl;
+		cout<<"B...Opposite sides Equal And Diaagonals Unequal"<<endl<<endl;
+		cout<<"Enter your option"<<endl<<endl;
+		cin>>option;
+		if(option=='B'||option=='b')
+		{
+			cout<<"Congrats..Your answer is Right.."<<endl<<endl;
+			cout<<"You won 10 more points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			break;
+		}
+		case 8:
+		cout<<endl<<endl;
+		cout<<"8...What are the properties of RHOMBUS?"<<endl<<endl;
+		cout<<"A...Opposite side equal and Diagonals Unequal"<<endl<<endl;
+		cout<<"B...All Sides Equal and Diagonals Unequal"<<endl<<endl;
+		cout<<"ENter your option"<<endl<<endl;
+		cin>>option;
+		if(option=='B'||option=='b')
+		{
+			cout<<"Congrats..Your answer is correct"<<endl<<endl;
+			cout<<"You won 10 Points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			break;
+		}
+		clrscr();
+		case 9:
+		cout<<"Which is the correct formula for PERIMETER OF TRIANGLE?"<<endl<<endl;
+		cout<<"A...a+b+c/3"<<endl<<endl;
+		cout<<"B...a+b+c"<<endl<<endl;
+		cout<<"Enter Your Option"<<endl<<endl;
+		cin>>option;
+		if(option=='B'||option=='b')
+		{
+			cout<<"Congrats..Your answer is correct"<<endl<<endl;
+			cout<<"You won 10 Points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			break;
+		}
+		clrscr();
+		case 10:
+		cout<<"And The Last Question For The Game"<<endl<<endl;
+		cout<<"Which is the correct formula of SQUARE?"<<endl<<endl;
+		cout<<"A...side*side"<<endl<<endl;
+		cout<<"B...pow(side,2)"<<endl<<endl;
+		if(option=='A'||option=='a'||option=='b'||option=='B')
+		{
+			cout<<"Congrats..Your answer is correct"<<endl<<endl;
+			cout<<"You won 10 Points"<<endl<<endl;
+			points+=10;
+			count++;
+			getch();
+		}
+		else
+		{
+			cout<<"Your answer is wrong"<<endl<<endl;
+			cout<<"Better luck next time...:("<<endl<<endl;
+			cout<<"Byee...."<<endl<<endl;
+			break;
+		}
+
+	}
+	cout<<"You gave "<<count<<" correct ANSWERS"<<endl<<endl;
+	cout<<"TOTAL POINTS WON = "<<points<<endl<<endl;
+	cout<<"Thank You For Playing...."<<endl<<endl;
+	getch();
+}
